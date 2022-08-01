@@ -1,8 +1,5 @@
-# Getting Started with Create React App
+# Project 08
 
-This project 
+### `imagen`
 
-## Available Scripts
-
-In the project directory, you can run:
-
+![image](/src/p08.png)
