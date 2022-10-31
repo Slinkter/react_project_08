@@ -3,11 +3,6 @@ import "./App.css";
 import html2canvas from "html2canvas";
 
 function App() {
-    // Select picker de meses
-    // input text -primera linea
-    // input text - segunda linea
-    // botton exportar
-
     const [linea1, setLinea1] = useState("");
     const [linea2, setLinea2] = useState("");
     const [imagen, setImagen] = useState("");
@@ -37,14 +32,11 @@ function App() {
             <input type="text" onChange={handleLinea1} /> <br />
             <input type="text" onChange={handleLinea2} /> <br />
             <button onClick={handleExport}>Exportar</button>
-            <div id="meme">
-                <div className="meme">
-                    <span className="span01">{linea1}</span>
-                    <br />
-                    <img src={`/imagen/${imagen}.jpg`} alt="" />
-                    <span className="span02">{linea2}</span>
-                </div>
-            </div>
+            <div className="meme" id="meme">
+            <span>{linea1}</span> <br />
+            <span>{linea2}</span>
+            <img src={"./imagen/" + imagen + ".jpg"} />
+          </div>
         </div>
     );
 }
